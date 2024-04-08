@@ -6,7 +6,6 @@ import styled, { ThemeProvider } from 'styled-components';
 import GlobalStyle from "./components/style/GlobalStyle";
 import mobileWidth from "./components/style/mobileWidth";
 
-
 const App = () => {
   return (
     <BrowserRouter>
