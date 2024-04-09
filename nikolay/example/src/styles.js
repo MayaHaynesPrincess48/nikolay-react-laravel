@@ -30,7 +30,8 @@ const styles = {
   text2: "text-dark xl:text-[27px] lg:text-[24px] md:text-[21px] sm:text-[18px] xs:text-[15px] py-2",
   text3: "text-dark xl:text-[24px] lg:text-[21px] md:text-[18px] sm:text-[15px] xs:text-[12px] py-2",
   text4: "text-dark xl:text-[21px] lg:text-[18px] md:text-[15px] sm:text-[12px] xs:text-[9px] py-1",
-  text5: "text-dark xl:text-[17px] lg:text-[15px] md:text-[12px] sm:text-[9px] xs:text-[9px] py-1",
+  text5: "text-dark xl:text-[18px] lg:text-[15px] md:text-[12px] sm:text-[9px] xs:text-[9px] py-1",
+  text6: "text-dark xl:text-[15px] lg:text-[15px] md:text-[12px] sm:text-[9px] xs:text-[9px]",
   textDefault: "text-dark text-[12px] p-2",
 
 
