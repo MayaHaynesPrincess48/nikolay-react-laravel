@@ -18,24 +18,19 @@ import car5 from './category/1 (5).jpg'
 import car6 from './category/1 (6).jpg'
 import car7 from './category/1 (7).jpg'
 
-export {
-  profile,
-  menu,
-  close,
+import avatar1 from './avatar/woman-circle1.png'
+import avatar2 from './avatar/woman-circle2.png'
+import avatar3 from './avatar/mini-man1.png'
+import avatar4 from './avatar/woman-circle3.png'
 
-  man1,
-  mancircle1,
-  mancircle2,
-  mancircle3,
-  mancircle4,
+export {
+  profile, menu, close,
+
+  man1, mancircle1, mancircle2, mancircle3, mancircle4,
 
   vcRu,
 
-  car1,
-  car2,
-  car3,
-  car4,
-  car5,
-  car6,
-  car7,
+  car1, car2, car3, car4, car5, car6, car7,
+
+  avatar1, avatar2, avatar3, avatar4
 };

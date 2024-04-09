@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { Navbar, Welcome, MyPublications } from "./components";
+import { Navbar, Welcome, MyPublications, CustomerReviews } from "./components";
 
 import styled, { ThemeProvider } from 'styled-components';
 import GlobalStyle from "./components/style/GlobalStyle";
@@ -15,7 +15,7 @@ const App = () => {
           <Navbar />
           <Welcome />
           <MyPublications />
-
+          <CustomerReviews />
         </div>
       </ThemeProvider>
     </BrowserRouter>

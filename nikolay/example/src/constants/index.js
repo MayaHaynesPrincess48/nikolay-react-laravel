@@ -14,6 +14,10 @@ import {
   car6,
   car7,
   vcRu,
+  avatar1,
+  avatar2,
+  avatar3,
+  avatar4,
 } from "../assets";
 
 
@@ -27,8 +31,8 @@ const navLinks = [
     title: 'My Publications',
   },
   {
-    id: 'coustomerReviews',
-    title: 'Coustomer Reviews',
+    id: 'customerReviews',
+    title: 'Customer Reviews',
   },
   {
     id: 'events',
@@ -207,6 +211,37 @@ const projects = [
   // },
 ];
 
+const customerCardDatas = [
+  {
+    type: 'video',
+    name: 'Makaroba Alexandra',
+    job: 'Manager Company Partner',
+    content: '',
+    url: avatar1,
+  },
+  {
+    type: 'video',
+    name: 'Petroba Irina',
+    job: 'Director OOO Company',
+    content: '',
+    url: avatar2,
+  },
+  {
+    type: 'image',
+    name: 'Cameron Williamson',
+    job: 'Manager Company Partner',
+    content: 'Use the scaling classes for larger or smaller rounded corners. Sizes range from 0 to 3, and can be configured by modifying the utilities API.',
+    url: avatar3,
+  },
+  {
+    type: 'video',
+    name: 'Gregorib Philp',
+    job: 'Manager Company Partner',
+    content: '',
+    url: avatar4,
+  },
+]
 
 
-export { navLinks, linkUrls, topicTitles, publications, publicationUsers, userDescriptioDatas, projects, };
+
+export { navLinks, linkUrls, topicTitles, publications, publicationUsers, userDescriptioDatas, projects, customerCardDatas };

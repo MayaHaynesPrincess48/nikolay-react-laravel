@@ -9,6 +9,7 @@ import NavLogo from './NavLogo'
 import MenuImg from '../image/MenuImg'
 import NavDropMenu from './NavDropMenu'
 import NavMenus from './NavMenus'
+import { StyledWhiteButton } from '../button/LinkBtn.jsx'
 
 const Navbar = () => {
 
@@ -31,14 +32,18 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 
-                     ${scrolled ? "bg-primary" : "bg-transparent"}`}
+    <nav className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20 
+                     ${scrolled ? "bg-secondary" : "bg-transparent"} 
+                     hover:bg-secondary`}
     >
       <div className='w-full flex justify-between items-center max-w-8xl mx-auto'>
         <NavLogo
           setActive={setActive}
         />
-        <NavMenus />
+        <NavMenus
+          active={active}
+          setActive={setActive}
+        />
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <MenuImg
