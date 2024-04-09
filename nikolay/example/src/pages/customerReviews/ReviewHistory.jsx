@@ -6,7 +6,7 @@ const ReviewHistory = () => {
 
 
   return (
-    <div className='bg-info'>
+    <div className='bg-info p-10'>
       <Title darkText1='Lorem ipsum dolor sit amet' purpleText='Lorem ipsum dolor sit' />
     </div>
   )

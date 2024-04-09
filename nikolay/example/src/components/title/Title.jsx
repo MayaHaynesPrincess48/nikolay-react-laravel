@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 import { styles } from '../../styles';
 import { textVariant } from "../../utils/motion"
-import WhiteButton from '../button/WhiteButton';
 import SmallWhiteButton from '../button/SmallWhiteButton';
 
 const Title = (props) => {
