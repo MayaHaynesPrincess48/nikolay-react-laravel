@@ -6,7 +6,7 @@ import Title from '../../components/title/Title'
 const CreatePublication = () => {
 
   return (
-    <>
+    <div className='pt-20'>
       <Title
         darkText1='Lorem ipsum dolor sit amet lrem '
         purpleText='Lorem ipsum dolor sit am'
@@ -18,7 +18,7 @@ const CreatePublication = () => {
           <PublicationCard key={index} index={index} {...item} />
         ))}
       </div>
-    </>
+    </div>
   )
 }
 

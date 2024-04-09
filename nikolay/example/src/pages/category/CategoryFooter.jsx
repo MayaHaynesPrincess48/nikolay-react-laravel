@@ -1,8 +1,7 @@
 import React from 'react'
-import { StyledPurpleButton } from '../../components/button/LinkBtn'
 import { GoArrowUpRight } from 'react-icons/go'
-import { VisibilityOutlined, FavoriteBorderOutlined, MarkChatUnreadOutlined, BookmarkBorderOutlined } from '@mui/icons-material';
-import { HiMail } from 'react-icons/hi'
+import { VisibilityOutlined, FavoriteBorderOutlined, MarkChatUnreadOutlined, BookmarkBorderOutlined } from '@mui/icons-material'
+import PurpleButton from '../../components/button/PurpleButton'
 
 const CategoryFooter = (props) => {
 
@@ -10,7 +9,9 @@ const CategoryFooter = (props) => {
 
   return (
     <div className='flex justify-between pt-5'>
-      <StyledPurpleButton className='flex items-center'>Читать на {siteName} &nbsp;<GoArrowUpRight /></StyledPurpleButton>
+      <div className='flex items-center'>
+        <PurpleButton title={`Читать на ${siteName}`} icon={<GoArrowUpRight />} />
+      </div>
       <div className='flex items-center gap-2 '>
         <button style={{ color: 'var(--dark-gray)' }}><VisibilityOutlined /> {view}</button>
         <button style={{ color: 'var(--dark-gray)' }}><FavoriteBorderOutlined /> {favourite}</button>

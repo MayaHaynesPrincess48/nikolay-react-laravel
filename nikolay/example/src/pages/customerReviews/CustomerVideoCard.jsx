@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../../utils/motion";
 import { styles } from "../../styles";
-import { StyledLinkUrl } from "../../components/button/LinkBtn";
 import { GoArrowUpRight } from "react-icons/go";
+import LinkUrlButton from "../../components/button/LinkUrlButton";
 
 
 const CustomerVideoCard = (props) => {
@@ -19,7 +19,7 @@ const CustomerVideoCard = (props) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className={` ${styles.cardImageStyle} xs:w-[250px] w-full bg-none`}
+      className={` ${styles.cardVideoStyle} xs:w-[250px] w-full`}
       style={cardStyle}
     >
       <div
@@ -32,12 +32,9 @@ const CustomerVideoCard = (props) => {
         <div className={`${styles.text5}`}>{name}</div>
         <div className={`${styles.textDefault}`}>{job}</div>
         <div className={`${styles.textDefault}`}>{content}</div>
-        <StyledLinkUrl
-          className={`${styles.urlBtn} text-white`}
-          onClick={() => { console.log('sdfsd') }}
-        >
-          опишите задачу<GoArrowUpRight />
-        </StyledLinkUrl>
+        <div className="flex justify-center">
+          <LinkUrlButton title='опишите задачу' icon={<GoArrowUpRight />} />
+        </div>
       </div>
     </motion.div>
   )

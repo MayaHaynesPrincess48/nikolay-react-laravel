@@ -1,10 +1,10 @@
-import React from "react";
-import TextField from '@mui/material/TextField';
+import React from "react"
+import TextField from '@mui/material/TextField'
 
-import SocialCardStyles from "./socialCardStyle";
-import SocialMap from "./socialMap";
-import { styles } from "../../styles";
-import { StyledDarkButton } from "../../components/button/LinkBtn";
+import SocialCardStyles from "./socialCardStyle"
+import SocialMap from "./socialMap"
+import { styles } from "../../styles"
+import DarkButton from "../../components/button/DarkButton"
 
 
 const SendCard = () => {
@@ -17,7 +17,7 @@ const SendCard = () => {
       <div className="flex flex-wrap justify-between pt-20">
         <div className="flex justify-center lg:w-[50%] sm:w-[100%] gap-3 py-5">
           <TextField id="outlined-basic" label="Bаш Email" variant="outlined" />
-          <StyledDarkButton >подписаться</StyledDarkButton>
+          <DarkButton title='подписаться' />
         </div>
         <div className="flex justify-center lg:w-[50%] sm:w-[100%] gap-3 py-5">
           {
@@ -33,4 +33,4 @@ const SendCard = () => {
   )
 }
 
-export default SendCard;
+export default SendCard

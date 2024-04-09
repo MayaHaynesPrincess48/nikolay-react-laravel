@@ -9,6 +9,7 @@ import CategoryHeader from "./CategoryHeader"
 import CategoryBody from "./CategoryBody"
 import CategoryFooter from "./CategoryFooter"
 import { StyledDarkButton } from "../../components/button/LinkBtn"
+import DarkButton from "../../components/button/DarkButton"
 
 const CategoryCard = (props) => {
 
@@ -46,7 +47,7 @@ const Category = () => {
       </div>
 
       <div className="flex justify-center p-20">
-        <StyledDarkButton>Add</StyledDarkButton>
+        <DarkButton title='Add' />
       </div>
     </>
   )

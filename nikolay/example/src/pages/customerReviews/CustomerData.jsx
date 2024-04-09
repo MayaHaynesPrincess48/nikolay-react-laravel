@@ -6,10 +6,8 @@ import CustomerVideoCard from './CustomerVideoCard'
 
 const CustomerData = () => {
 
-
-
   return (
-    <div className='flex justify-between flex-wrap'>
+    <div className='flex justify-between flex-wrap py-10'>
       {
         customerCardDatas.map((item, index) => {
           return (

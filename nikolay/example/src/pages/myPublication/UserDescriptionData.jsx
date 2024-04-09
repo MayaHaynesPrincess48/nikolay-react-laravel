@@ -1,15 +1,13 @@
 import React from 'react'
 import { motion } from "framer-motion"
 
-
-import { StyledDarkButton, StyledWhiteButton } from "../../components/button/LinkBtn";
-import { topicTitles } from "../../constants"
 import { slideIn } from "../../utils/motion"
 import { man1 } from "../../assets"
 import UserSkillDescription from "./UserSkillDescription"
 import { GoArrowUpRight } from "react-icons/go";
 import UserDescriptionAvatar from './UserDescriptionAvatar';
 import SkillButtons from '../welcome/SkillButtons';
+import DarkButton from '../../components/button/DarkButton';
 
 
 const UserDescriptionTitle = () => (
@@ -40,7 +38,7 @@ const UserDescriptionData = () => {
           <UserDescriptionTitle />
           <UserSkillDescription />
           <SkillButtons />
-          <StyledDarkButton className="flex items-center">Donec vitae sapien ut liber &nbsp;<GoArrowUpRight /></StyledDarkButton>
+          <DarkButton title='Donec vitae sapien ut liber' icon={<GoArrowUpRight />} />
         </div>
       </div>
 

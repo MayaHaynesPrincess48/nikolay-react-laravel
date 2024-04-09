@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 
 import { styles } from '../../styles';
 import { textVariant } from "../../utils/motion"
+import WhiteButton from '../button/WhiteButton';
+import SmallWhiteButton from '../button/SmallWhiteButton';
 
 const Title = (props) => {
 
@@ -10,7 +12,9 @@ const Title = (props) => {
 
   return (
     <motion.div variants={textVariant()} className="flex flex-wrap">
-      <p className={`${styles.sectionSubText}  md:w-[30%] sm:w-[100%]`}>Lorem ipsum dolor</p>
+      <div className='md:w-[30%] sm:w-[100%] p-5'>
+        <SmallWhiteButton title='Lorem ipsum dolor' />
+      </div>
       <h3 className={`${styles.sectionHeadText} md:w-[70%] sm:w-[100%]`}>
         {darkText1} <span style={{ color: 'var(--purple)' }}>{purpleText}</span> {darkText2}
       </h3>

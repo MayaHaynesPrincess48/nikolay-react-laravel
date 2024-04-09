@@ -34,12 +34,14 @@ const styles = {
   textDefault: "text-dark text-[12px] p-2",
 
 
-  cardImageStyle: "bg-dark h-[310px] p-1 rounded-[10px] transition duration-300 ease-in-out hover:bg-purple hover:scale-110 cursor-pointer",
-  cardImageStyle: "bg-none h-[310px] p-1 rounded-[10px] transition duration-300 ease-in-out hover:bg-purple hover:scale-110 cursor-pointer",
-  urlBtn: "text-dark text-[12px]  hover:translate-x-[-2px] hover:translate-y-[-2px] hover:text-dark cursor-pointer",
+  cardImageStyle: "h-[310px] p-1 rounded-[10px] transition duration-300 ease-in-out hover:bg-purple hover:scale-110 cursor-pointer",
+  cardVideoStyle: "h-[310px] p-1 rounded-[10px] transition duration-300 ease-in-out hover:bg-purple cursor-pointer",
+  urlBtn: "text-[12px] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:text-lightGray cursor-pointer underline flex items-center text-center",
 
-  whiteButton: 'px-[25px] py-[10px] bg-third tex-[15px] text-lightGray rounded-[25px] transition duration-300 ease-in-out transform hover:translate-x-[-4px] hover:translate-y-[-4px] hover:bg-purple ',
-  purpleButton: 'px-[25px] py-[10px] bg-purple text-third tex-[15px] rounded-[25px] transition duration-300 ease-in-out transform hover:translate-x-[-4px] hover:translate-y-[-4px] hover:bg-dark ',
+  whiteButton: 'px-[25px] py-[10px] bg-third text-[15px] text-lightGray rounded-[25px] transition duration-300 ease-in-out transform hover:translate-x-[-4px] hover:translate-y-[-4px] hover:bg-purple ',
+  darkButton: 'px-[25px] py-[10px] bg-dark text-[15px] text-lightGray rounded-[25px] transition duration-300 ease-in-out transform hover:translate-x-[-4px] hover:translate-y-[-4px] hover:bg-purple ',
+  purpleButton: 'px-[25px] py-[10px] bg-purple text-third text-[15px] rounded-[25px] transition duration-300 ease-in-out transform hover:translate-x-[-4px] hover:translate-y-[-4px] hover:bg-dark ',
+  smallWhiteButton: 'px-[15px] py-[5px] bg-third text-lightGray text-[14px] rounded-[15px] transition duration-300 ease-in-out transform hover:translate-x-[-4px] hover:translate-y-[-4px] hover:bg-dark ',
 
 };
 

@@ -1,11 +1,11 @@
-import React from "react";
-import Tilt from "react-tilt";
-import { motion } from "framer-motion";
+import React from "react"
+import Tilt from "react-tilt"
+import { motion } from "framer-motion"
 
-import { fadeIn } from "../../utils/motion";
-import { styles } from "../../styles";
-import { StyledLinkUrl } from "../../components/button/LinkBtn";
-import { GoArrowUpRight } from "react-icons/go";
+import { fadeIn } from "../../utils/motion"
+import { styles } from "../../styles"
+import { GoArrowUpRight } from "react-icons/go"
+import LinkUrlButton from "../../components/button/LinkUrlButton"
 
 const CustomerImageCard = (props) => {
 
@@ -27,23 +27,18 @@ const CustomerImageCard = (props) => {
           options={{ max: 45, scale: 1, speed: 450, }}
           className='rounded-[10px] p-6 min-h-[280px]'
         >
-          <div className={`${styles.text5} text-white`}>{name}</div>
-          <div className={`${styles.textDefault} text-white`}>{job}</div>
-          <div className={`${styles.textDefault} text-white`}>{content}</div>
+          <div className={`${styles.text5}`}>{name}</div>
+          <div className={`${styles.textDefault}`}>{job}</div>
+          <div className={`${styles.textDefault}`}>{content}</div>
           <div className="flex justify-between px-3 pt-3">
             <img src={url} className="w-[50px]" />
-            <StyledLinkUrl
-              className={`${styles.urlBtn} cursor-pointer items-end text-white`}
-              onClick={() => { console.log('sdfsd') }}
-            >
-              опишите задачу<GoArrowUpRight />
-            </StyledLinkUrl>
+            <LinkUrlButton title='опишите задачу' icon={<GoArrowUpRight />} />
           </div>
 
         </div>
       </motion.div>
     </Tilt>
   )
-};
+}
 
 export default CustomerImageCard

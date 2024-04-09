@@ -1,11 +1,10 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom"
 
-import { Navbar, Welcome, MyPublications, CustomerReviews } from "./components";
+import { Navbar, Welcome, MyPublications, CustomerReviews } from "./components"
 
-import styled, { ThemeProvider } from 'styled-components';
-import GlobalStyle from "./components/style/GlobalStyle";
-import mobileWidth from "./components/style/mobileWidth";
-import DialogModal from "./components/modal/DialogModal";
+import styled, { ThemeProvider } from 'styled-components'
+import GlobalStyle from "./components/style/GlobalStyle"
+import mobileWidth from "./components/style/mobileWidth"
 
 const App = () => {
   return (
@@ -17,11 +16,10 @@ const App = () => {
           <Welcome />
           <MyPublications />
           <CustomerReviews />
-          <DialogModal />
         </div>
       </ThemeProvider>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App
