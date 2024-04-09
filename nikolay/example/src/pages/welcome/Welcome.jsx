@@ -13,7 +13,7 @@ import LinkUrls from "./LinkUrls";
 const Welcome = () => {
 
   return (
-    <Box component="section" className='xl:pt-35 flex flex-wrap sm:pt-30 gap-5 flex justify-center' >
+    <Box component="section" className='xl:pt-40 flex flex-wrap sm:pt-30 gap-5 flex justify-center' >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='md:w-[30%] sm:w-[100%]'

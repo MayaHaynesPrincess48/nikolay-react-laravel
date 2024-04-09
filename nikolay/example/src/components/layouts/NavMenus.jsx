@@ -22,6 +22,9 @@ const NavMenus = (props) => {
           </li>
         ))
       }
+      <li><StyledWhiteButton>Sign Up</StyledWhiteButton></li>
+      <li> <StyledWhiteButton>Sign In</StyledWhiteButton></li>
+      <li> <StyledWhiteButton>Sign Out</StyledWhiteButton></li>
     </ul>
   )
 }
