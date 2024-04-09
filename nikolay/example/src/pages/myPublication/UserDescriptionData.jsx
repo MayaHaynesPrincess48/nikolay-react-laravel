@@ -9,7 +9,7 @@ import { man1 } from "../../assets"
 import UserSkillDescription from "./UserSkillDescription"
 import { GoArrowUpRight } from "react-icons/go";
 import UserDescriptionAvatar from './UserDescriptionAvatar';
-import SkillButtons from '../../components/button/SkillButtons';
+import SkillButtons from '../welcome/SkillButtons';
 
 
 const UserDescriptionTitle = () => (

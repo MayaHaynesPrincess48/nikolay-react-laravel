@@ -5,6 +5,7 @@ import { Navbar, Welcome, MyPublications, CustomerReviews } from "./components";
 import styled, { ThemeProvider } from 'styled-components';
 import GlobalStyle from "./components/style/GlobalStyle";
 import mobileWidth from "./components/style/mobileWidth";
+import DialogModal from "./components/modal/DialogModal";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Welcome />
           <MyPublications />
           <CustomerReviews />
+          <DialogModal />
         </div>
       </ThemeProvider>
     </BrowserRouter>

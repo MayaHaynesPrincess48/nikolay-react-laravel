@@ -1,6 +1,7 @@
-import profile from "./profile.png";
-import menu from "./icons8-menu.svg";
-import close from "./close.svg";
+import profile from "./profile.png"
+import logo from './logo.png'
+import menu from "./icons8-menu.svg"
+import close from "./close.svg"
 
 import man1 from './avatar/man1.jpg'
 import mancircle1 from './avatar/man-circle1.png'
@@ -24,7 +25,7 @@ import avatar3 from './avatar/mini-man1.png'
 import avatar4 from './avatar/woman-circle3.png'
 
 export {
-  profile, menu, close,
+  profile, logo, menu, close,
 
   man1, mancircle1, mancircle2, mancircle3, mancircle4,
 
@@ -33,4 +34,4 @@ export {
   car1, car2, car3, car4, car5, car6, car7,
 
   avatar1, avatar2, avatar3, avatar4
-};
+}

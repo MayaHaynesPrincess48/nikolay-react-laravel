@@ -21,6 +21,42 @@ import {
 } from "../assets";
 
 
+const signUpData = [
+  {
+    title: 'name',
+    type: 'text',
+    label: 'Full Name',
+  },
+  {
+    title: 'email',
+    type: 'email',
+    label: 'Email Address',
+  },
+  {
+    title: 'password',
+    type: 'password',
+    label: 'Password',
+  },
+  {
+    title: 'verify',
+    type: 'password',
+    label: 'Verify',
+  },
+]
+
+const signInData = [
+  {
+    title: 'email',
+    type: 'email',
+    label: 'Email Address',
+  },
+  {
+    title: 'password',
+    type: 'password',
+    label: 'Password',
+  },
+]
+
 const navLinks = [
   {
     id: 'welcome',
@@ -45,7 +81,7 @@ const linkUrls = [
 ]
 
 const topicTitles = [
-  'Lorem ipsum', 'Dolor site amet', 'Sit amet', 'Consectetuer', 'Donec quam feils', 'Curabitur ullamcorper'
+  'Lorem ipsum', 'Dolor amet', 'Sit amet', 'Consectetuer', 'Donec quam', 'ullamcorper'
 ]
 
 const publications = [
@@ -244,4 +280,4 @@ const customerCardDatas = [
 
 
 
-export { navLinks, linkUrls, topicTitles, publications, publicationUsers, userDescriptioDatas, projects, customerCardDatas };
+export { signUpData, signInData, navLinks, linkUrls, topicTitles, publications, publicationUsers, userDescriptioDatas, projects, customerCardDatas };

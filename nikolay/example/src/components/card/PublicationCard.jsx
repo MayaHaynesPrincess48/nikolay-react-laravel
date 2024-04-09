@@ -28,7 +28,7 @@ const PublicationCard = ({ index, purpleText, text, title, content }) => {
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className={styles.cardImageStyle}
+        className={`${styles.cardImageStyle} bg-dark`}
         style={cardStyle}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

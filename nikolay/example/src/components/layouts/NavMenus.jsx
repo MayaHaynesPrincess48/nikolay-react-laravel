@@ -1,6 +1,8 @@
 import React from 'react'
-import { navLinks } from '../../constants'
+import { navLinks, signInData, signUpData } from '../../constants'
 import { StyledWhiteButton } from '../button/LinkBtn'
+import DialogModal from '../modal/DialogModal'
+import WhiteButton from '../button/WhiteButton'
 
 
 const NavMenus = (props) => {
@@ -11,20 +13,21 @@ const NavMenus = (props) => {
     <ul className='list-none hidden sm:flex flex-row md:gap-5 xm:gap-2 '>
       {
         navLinks.map((nav) => (
-          <li
+          <a href={`#${nav.id}`}
             key={nav.id}
-            className={`${active === nav.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}>
-              <StyledWhiteButton shape="round">{nav.title}</StyledWhiteButton>
-            </a>
-          </li>
+            <WhiteButton title={nav.title} />
+          </a>
         ))
       }
-      <li><StyledWhiteButton>Sign Up</StyledWhiteButton></li>
-      <li> <StyledWhiteButton>Sign In</StyledWhiteButton></li>
-      <li> <StyledWhiteButton>Sign Out</StyledWhiteButton></li>
+      <li>
+        <DialogModal modalTitle='Sign Up' data={signUpData} />
+      </li>
+      <li>
+        <DialogModal modalTitle='Sign In' data={signInData} />
+      </li>
+      <li> <StyledWhiteButton style={{ backgroundColor: 'red', color: 'yellow' }}>Sign Out</StyledWhiteButton></li>
     </ul>
   )
 }

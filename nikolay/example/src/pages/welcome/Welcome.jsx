@@ -6,9 +6,10 @@ import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
 
 import { profile } from "../../assets";
-import ProfileCard from "../../components/card/ProfileCard";
+import ProfileCard from "./ProfileCard";
 import LargeAvatar from "../../components/image/LargeAvatar";
 import LinkUrls from "./LinkUrls";
+import CreatePublication from "../myPublication/CreatePublication";
 
 const Welcome = () => {
 
@@ -27,6 +28,7 @@ const Welcome = () => {
       >
         <ProfileCard />
       </motion.div>
+      <CreatePublication />
     </Box>
   );
 };
